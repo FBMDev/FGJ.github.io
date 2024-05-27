@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Fiscalía</title>
+    <link rel="stylesheet" href="busqueda.css">
+</head>
+
+<body>
+    <header class="header-top">
+        <div class="container">
+            <img src="LOGO-FGJ.svg" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="inicio.html" title="Ir a la página de inicio">Inicio</a></li>
+                    <li><a href="busqueda.html" title="Buscar casos judiciales">Buscar Casos</a></li>
+                    <li><a href="Add Datos.html" title="Añadir Datos">Añadir Datos</a></li>
+                    <li><a href="estadisticas.html" title="Ver estadísticas">Estadísticas</a></li>
+                    <li><a href="" title="Obtener ayuda">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Buscar Casos</h2>
+            <div class="search-form">
+                <input type="text" id="inputNombre" placeholder="Nombre del Sentenciado">
+                <input type="text" id="inputCarpeta" placeholder="Número de Carpeta Judicial">
+                <select id="selectDelito">
+                    <option value="">Seleccionar Tipo de Delito</option>
+                    <option value="robo">Robo</option>
+                    <option value="homicidio">Homicidio</option>
+                    <option value="fraude">Fraude</option>
+                </select>
+                <button id="btnBuscar">Buscar</button>
+                <button id="btnLimpiar">Limpiar Búsqueda</button>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2>Resultados de Búsqueda</h2>
+            <table id="tablaResultados">
+                <thead>
+                    <tr>
+                        <th>Nombre del Sentenciado <span class="arrow">&#9650;</span></th>
+                        <th>Número de Carpeta Judicial</th>
+                        <th>Tipo de Delito</th>
+                        <th>Fecha de Sentencia</th>
+                        <th>Estado del Caso</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123456</td>
+                        <td>Robo</td>
+                        <td>12/05/2023</td>
+                        <td>En Proceso</td>
+                        <td><button class="verDetallesBtn">Ver Detalles</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>789012</td>
+                        <td>Homicidio</td>
+                        <td>25/08/2022</td>
+                        <td>Resuelto</td>
+                        <td><button class="verDetallesBtn">Ver Detalles</button></td>
+                    </tr>
+                    <tr>
+                        <td>Michael Johnson</td>
+                        <td>345678</td>
+                        <td>Fraude</td>
+                        <td>03/10/2023</td>
+                        <td>Cerrado</td>
+                        <td><button class="verDetallesBtn">Ver Detalles</button></td>
+                    </tr>
+                    <tr>
+                        <td>Emily Brown</td>
+                        <td>901234</td>
+                        <td>Tráfico de Drogas</td>
+                        <td>17/06/2024</td>
+                        <td>Pendiente</td>
+                        <td><button class="verDetallesBtn">Ver Detalles</button></td>
+                    </tr>
+                    <tr>
+                        <td>David Martinez</td>
+                        <td>567890</td>
+                        <td>Violencia Doméstica</td>
+                        <td>08/09/2023</td>
+                        <td>En Proceso</td>
+                        <td><button class="verDetallesBtn">Ver Detalles</button></td>
+                    </tr>
+                    <tr>
+                        <td>David Martinez Rojas</td>
+                        <td>567891</td>
+                        <td>Violencia Doméstica</td>
+                        <td>08/09/2023</td>
+                        <td>En Proceso</td>
+                        <td><button class="verDetallesBtn">Ver Detalles</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Fiscalía de Ejecución Penal</p>
+    </footer>
+
+    <script src="busqueda.js"></script>
+</body>
+
+</html>
